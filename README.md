@@ -2,6 +2,41 @@
 
 This repository contains the designs and code for an AI Capabilities Research Project ocodenamed `ai-sdlc`. This project is a work-in-progress and is currently in its very early stages. As such, it may not function as expected and any effectiveness at its intended tasks should not be assumed.
 
+AI-SDLC is being developed in a hierarchical, fractal, modular pattern. Since this project is centered around Large Language Models, much of the "code" will actually be in natural language. Markdown is being chosen as the format of choice due to its innate ability to be parsed by humans and LLMs in equal measure.
+
+Especially in the early stages, most of this repository will consist of design documents, and attempts to capture the development process in a similar format.
+
+### BRAINSTORM.md
+
+This file represents a raw chat log between (usually) a human and a large language model. It can be given as context to either type of agent when starting any particular task about solidifying the design.
+
+Here are the links to the `BRAINSTORM.md` documents in each of the project's current layers:
+
+- [Root AI-SDLC Brainstorming](./BRAINSTORM.md)
+
+- [GitHub Access](./github/BRAINSTORM.md)
+  - [GitHub Project Management with Autogen](./autogen/gh-proj-mgmt/BRAINSTORM.md)
+
+- [SDLC Markdown Specifications](./md-sdlc/BRAINSTORM.md)
+  - [File Furling](./furling/BRAINSTORM.md)
+
+### DESIGN.md
+
+This file should be the end result of the brainstorming process, or something that uses the BRAINSTORM.md as input and engages with the user to develop the final design. It should be iterated on to define the full feature set before planning the development.
+
+Here are the links to the `DESIGN.md` documents in each of the project's current layers:
+
+- [Furling](./furling/DESIGN.md)
+- [GitHub Access](./github/DESIGN.md)
+  - [GitHub Issues Furling](./github/gh-furl/DESIGN.md)
+
+
+### Bootstrapping via Markdown
+
+This pattern of naming documents after the various stages of the software development lifecycle is the general pattern that this repo will follow for now.
+
+This project will heavily rely on AI bootstrapping so the LLMs will be generating their own design documents and their own development plans, etc.
+
 ## Autogen
 
 This project makes use of [Autogen](https://microsoft.github.io/autogen/), a multi-agent LLM framework from Microsoft.
@@ -39,5 +74,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
-Please replace `[year]` and `[fullname]` with the current year and your full name, respectively.
